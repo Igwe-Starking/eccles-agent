@@ -1,0 +1,25 @@
+# Gradle / Android
+.gradle/
+build/
+*/build/
+local.properties
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing material and secrets: never commit these
+*.jks
+*.keystore
+keystore.properties
+*.pem
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Release binaries live in GitHub Releases, not in git history
+*.apk
+*.aab

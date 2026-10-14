@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-label="Eccles Agent: say it, your phone does it">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b18"/><stop offset="0.55" stop-color="#101842"/><stop offset="1" stop-color="#2a1458"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6c8cff" stop-opacity="0.55"/><stop offset="1" stop-color="#6c8cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ttl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#a9b8ff"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b8cff"/><stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+  <circle cx="1010" cy="300" r="360" fill="url(#glow)"/>
+
+  <!-- shield + bolt mark -->
+  <g transform="translate(96 108)">
+    <path d="M60 0 L120 22 V76 C120 118 94 148 60 162 C26 148 0 118 0 76 V22 Z" fill="url(#shield)"/>
+    <path d="M68 28 L36 86 H58 L52 134 L86 70 H64 Z" fill="#ffffff"/>
+  </g>
+  <text x="248" y="170" font-family="Inter,'Segoe UI',Helvetica,Arial,sans-serif" font-size="92" font-weight="800" fill="url(#ttl)" letter-spacing="-2">Eccles Agent</text>
+  <text x="252" y="222" font-family="Inter,'Segoe UI',Helvetica,Arial,sans-serif" font-size="34" font-weight="500" fill="#c9d3ff">Say it. Your phone does it.</text>
+
+  <!-- command pill -->
+  <g transform="translate(96 290)">
+    <rect width="740" height="78" rx="39" fill="#0d1330" stroke="#6c8cff" stroke-opacity="0.55" stroke-width="2"/>
+    <circle cx="44" cy="39" r="14" fill="#6c8cff"/>
+    <rect x="38" y="27" width="12" height="18" rx="6" fill="#0d1330"/>
+    <text x="78" y="49" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="23" fill="#e8ecff">"Eccles, open Facebook and post hello everyone"</text>
+  </g>
+
+  <!-- timeline chips -->
+  <g font-family="Inter,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="600">
+    <g transform="translate(96 400)"><rect width="172" height="52" rx="26" fill="#10301f"/><text x="22" y="34" fill="#4ade80">&#10003;  Open app</text></g>
+    <g transform="translate(280 400)"><rect width="196" height="52" rx="26" fill="#10301f"/><text x="22" y="34" fill="#4ade80">&#10003;  Tap composer</text></g>
+    <g transform="translate(488 400)"><rect width="130" height="52" rx="26" fill="#10301f"/><text x="22" y="34" fill="#4ade80">&#10003;  Type</text></g>
+    <g transform="translate(630 400)"><rect width="240" height="52" rx="26" fill="#3a2a0c"/><text x="22" y="34" fill="#fbbf24">&#9888;  You approve Post</text></g>
+  </g>
+
+  <!-- provider pills -->
+  <g font-family="Inter,'Segoe UI',Helvetica,Arial,sans-serif" font-size="21" font-weight="600" fill="#dfe5ff">
+    <g transform="translate(96 500)"><rect width="150" height="44" rx="22" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/><text x="75" y="29" text-anchor="middle">Gemini</text></g>
+    <g transform="translate(258 500)"><rect width="150" height="44" rx="22" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/><text x="75" y="29" text-anchor="middle">OpenAI</text></g>
+    <g transform="translate(420 500)"><rect width="150" height="44" rx="22" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/><text x="75" y="29" text-anchor="middle">Claude</text></g>
+    <g transform="translate(582 500)"><rect width="262" height="44" rx="22" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/><text x="131" y="29" text-anchor="middle">Any OpenAI-compatible</text></g>
+  </g>
+
+  <!-- phone -->
+  <g transform="translate(930 70)">
+    <rect width="270" height="500" rx="40" fill="#05070f" stroke="#7d93ff" stroke-width="3"/>
+    <rect x="12" y="14" width="246" height="472" rx="30" fill="#0b1024"/>
+    <rect x="95" y="24" width="80" height="10" rx="5" fill="#1b2347"/>
+    <g font-family="Inter,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#cdd6ff">
+      <rect x="30" y="64" width="210" height="34" rx="17" fill="#a9b8ff"/><text x="46" y="86" fill="#0b1024" font-weight="600">Turn on the flashlight</text>
+      <rect x="30" y="112" width="210" height="46" rx="12" fill="#151c3a"/><text x="44" y="140">Open Quick Settings&#8230;</text>
+      <rect x="30" y="168" width="210" height="46" rx="12" fill="#151c3a"/><text x="44" y="196"><tspan fill="#4ade80">&#10003;</tspan>  Click "Flashlight"</text>
+      <rect x="30" y="224" width="210" height="46" rx="12" fill="#151c3a"/><text x="44" y="252"><tspan fill="#4ade80">&#10003;</tspan>  Goal complete</text>
+      <rect x="30" y="290" width="210" height="74" rx="14" fill="#0f3d27"/><text x="46" y="322" font-weight="700" fill="#4ade80" font-size="17">&#10003; Done</text><text x="46" y="346" font-size="13">Flashlight turned on.</text>
+      <rect x="30" y="420" width="210" height="44" rx="22" fill="#151c3a"/><text x="48" y="448" fill="#7f8bb8">Tell Eccles what to do&#8230;</text>
+    </g>
+  </g>
+</svg>

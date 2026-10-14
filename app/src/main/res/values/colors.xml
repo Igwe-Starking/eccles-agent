@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="eccles_primary">#1F4FE0</color>
+    <color name="eccles_on_primary">#FFFFFF</color>
+    <color name="eccles_primary_container">#DCE4FF</color>
+    <color name="eccles_on_primary_container">#001B63</color>
+    <color name="eccles_secondary">#0E7C86</color>
+    <color name="eccles_secondary_container">#CFF1F4</color>
+    <color name="eccles_on_secondary_container">#002F33</color>
+
+    <color name="eccles_bg">#F5F6FA</color>
+    <color name="eccles_surface">#FFFFFF</color>
+    <color name="eccles_surface_variant">#E6E9F2</color>
+    <color name="eccles_on_surface">#11141C</color>
+    <color name="eccles_on_surface_variant">#4A5164</color>
+    <color name="eccles_outline">#8A91A5</color>
+    <color name="eccles_outline_variant">#D3D8E4</color>
+
+    <color name="eccles_success">#168A55</color>
+    <color name="eccles_success_container">#D9F4E5</color>
+    <color name="eccles_on_success_container">#06402A</color>
+    <color name="eccles_error">#BA1A1A</color>
+    <color name="eccles_error_container">#FFDAD6</color>
+    <color name="eccles_on_error_container">#410002</color>
+    <color name="eccles_warning">#B26A00</color>
+    <color name="eccles_warning_container">#FFEBC8</color>
+    <color name="eccles_on_warning_container">#3B2400</color>
+    <color name="eccles_neutral">#8A91A5</color>
+
+    <color name="eccles_splash_bg">#1F4FE0</color>
+</resources>

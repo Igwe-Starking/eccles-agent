@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="provider_entries">
+        <item>Google Gemini (default)</item>
+        <item>OpenAI</item>
+        <item>Anthropic Claude</item>
+        <item>Custom (OpenAI-compatible)</item>
+    </string-array>
+    <string-array name="provider_values">
+        <item>gemini</item>
+        <item>openai</item>
+        <item>claude</item>
+        <item>custom</item>
+    </string-array>
+
+    <string-array name="exec_entries">
+        <item>Automatic (accessibility, ADB as backup)</item>
+        <item>Accessibility only</item>
+        <item>ADB only</item>
+    </string-array>
+    <string-array name="exec_values">
+        <item>auto</item>
+        <item>accessibility</item>
+        <item>adb</item>
+    </string-array>
+
+    <string-array name="adb_transport_entries">
+        <item>Local ADB over TCP</item>
+        <item>Root (su)</item>
+    </string-array>
+    <string-array name="adb_transport_values">
+        <item>tcp</item>
+        <item>root</item>
+    </string-array>
+
+    <string-array name="vision_entries">
+        <item>Only when needed (recommended)</item>
+        <item>Every step</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="vision_values">
+        <item>fallback</item>
+        <item>always</item>
+        <item>never</item>
+    </string-array>
+
+    <string-array name="steps_entries">
+        <item>10 steps</item>
+        <item>15 steps</item>
+        <item>25 steps</item>
+        <item>40 steps</item>
+        <item>60 steps</item>
+    </string-array>
+    <string-array name="steps_values">
+        <item>10</item>
+        <item>15</item>
+        <item>25</item>
+        <item>40</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="delay_entries">
+        <item>Fast (0.4 s)</item>
+        <item>Normal (0.7 s)</item>
+        <item>Careful (1.2 s)</item>
+        <item>Slow (2 s)</item>
+    </string-array>
+    <string-array name="delay_values">
+        <item>400</item>
+        <item>700</item>
+        <item>1200</item>
+        <item>2000</item>
+    </string-array>
+
+    <string-array name="theme_entries">
+        <item>Follow system</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+</resources>

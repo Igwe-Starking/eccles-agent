@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- shield -->
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M54,24 L30,33 V54 C30,69 40,80 54,86 C68,80 78,69 78,54 V33 Z" />
+    <!-- bolt -->
+    <path android:fillColor="#FF1F4FE0"
+        android:pathData="M58,37 L46,56 H54 L50,71 L63,50 H55 Z" />
+</vector>

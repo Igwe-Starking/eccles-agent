@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="AI provider">
+        <ListPreference
+            android:key="provider"
+            android:title="Provider"
+            android:entries="@array/provider_entries"
+            android:entryValues="@array/provider_values"
+            android:defaultValue="gemini"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:key="model_gemini"
+            android:title="Model"
+            android:dialogTitle="Gemini model"
+            android:selectAllOnFocus="true" />
+        <EditTextPreference
+            android:key="model_openai"
+            android:title="Model"
+            android:dialogTitle="OpenAI model"
+            android:selectAllOnFocus="true" />
+        <EditTextPreference
+            android:key="model_claude"
+            android:title="Model"
+            android:dialogTitle="Claude model"
+            android:selectAllOnFocus="true" />
+        <EditTextPreference
+            android:key="model_custom"
+            android:title="Model"
+            android:dialogTitle="Model name"
+            android:selectAllOnFocus="true" />
+        <EditTextPreference
+            android:key="custom_base_url"
+            android:title="Base URL"
+            android:dialogTitle="OpenAI-compatible base URL" />
+        <Preference
+            android:key="api_key"
+            android:title="API key" />
+        <Preference
+            android:key="test_connection"
+            android:title="Test connection"
+            android:summary="Sends a tiny request to check the key and model" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Control">
+        <ListPreference
+            android:key="exec_mode"
+            android:title="How Eccles acts"
+            android:entries="@array/exec_entries"
+            android:entryValues="@array/exec_values"
+            android:defaultValue="auto"
+            app:useSimpleSummaryProvider="true" />
+        <Preference
+            android:key="open_accessibility"
+            android:title="Accessibility service" />
+        <Preference
+            android:key="screen_capture"
+            android:title="Screen capture (MediaProjection)" />
+        <ListPreference
+            android:key="vision_mode"
+            android:title="Send screenshots to the AI"
+            android:entries="@array/vision_entries"
+            android:entryValues="@array/vision_values"
+            android:defaultValue="fallback"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:key="max_steps"
+            android:title="Step limit per task"
+            android:entries="@array/steps_entries"
+            android:entryValues="@array/steps_values"
+            android:defaultValue="25"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:key="step_delay"
+            android:title="Pace"
+            android:entries="@array/delay_entries"
+            android:entryValues="@array/delay_values"
+            android:defaultValue="700"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="ADB (optional)">
+        <ListPreference
+            android:key="adb_transport"
+            android:title="ADB connection"
+            android:entries="@array/adb_transport_entries"
+            android:entryValues="@array/adb_transport_values"
+            android:defaultValue="tcp"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:key="adb_port"
+            android:title="ADB port"
+            android:dialogTitle="ADB TCP port"
+            android:defaultValue="5555" />
+        <Preference
+            android:key="adb_help"
+            android:selectable="false"
+            android:summary="@string/adb_help" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Safety">
+        <Preference
+            android:key="excluded_apps"
+            android:title="Excluded apps"
+            android:summary="Apps Eccles must never read or operate, such as banking apps" />
+        <SwitchPreferenceCompat
+            android:key="smart_detect"
+            android:title="Auto-detect financial apps"
+            android:summary="Also exclude apps that look like banking, wallet, payment or trading apps"
+            android:defaultValue="true" />
+        <SwitchPreferenceCompat
+            android:key="block_password"
+            android:title="Stop at password screens"
+            android:summary="Stop the task instead of reading a screen that has a password field"
+            android:defaultValue="true" />
+        <SwitchPreferenceCompat
+            android:key="confirm_sensitive"
+            android:title="Confirm irreversible actions"
+            android:summary="Ask before sending, posting, deleting, buying and similar"
+            android:defaultValue="true" />
+        <SwitchPreferenceCompat
+            android:key="show_overlay"
+            android:title="Show status pill"
+            android:summary="A small Stop button floats on top while a task runs"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="General">
+        <ListPreference
+            android:key="theme_mode"
+            android:title="Theme"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="system"
+            app:useSimpleSummaryProvider="true" />
+        <Preference
+            android:key="history"
+            android:title="Task history" />
+        <Preference
+            android:key="version"
+            android:title="Version"
+            android:selectable="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

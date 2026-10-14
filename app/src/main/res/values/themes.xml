@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Eccles" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/eccles_primary</item>
+        <item name="colorOnPrimary">@color/eccles_on_primary</item>
+        <item name="colorPrimaryContainer">@color/eccles_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/eccles_on_primary_container</item>
+        <item name="colorSecondary">@color/eccles_secondary</item>
+        <item name="colorSecondaryContainer">@color/eccles_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/eccles_on_secondary_container</item>
+        <item name="colorSurface">@color/eccles_surface</item>
+        <item name="colorOnSurface">@color/eccles_on_surface</item>
+        <item name="colorSurfaceVariant">@color/eccles_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/eccles_on_surface_variant</item>
+        <item name="colorOutline">@color/eccles_outline</item>
+        <item name="colorOutlineVariant">@color/eccles_outline_variant</item>
+        <item name="colorError">@color/eccles_error</item>
+        <item name="colorErrorContainer">@color/eccles_error_container</item>
+        <item name="colorOnErrorContainer">@color/eccles_on_error_container</item>
+        <item name="android:colorBackground">@color/eccles_bg</item>
+        <item name="android:windowBackground">@color/eccles_bg</item>
+        <item name="android:statusBarColor">@color/eccles_bg</item>
+        <item name="android:navigationBarColor">@color/eccles_bg</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="chipStyle">@style/Widget.Eccles.Chip</item>
+    </style>
+
+    <!-- Secondary screens use a real ActionBar (EcclesOptions sets the Up arrow on it). -->
+    <style name="Theme.Eccles.Options" parent="Theme.Eccles">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="actionBarStyle">@style/Widget.Eccles.ActionBar</item>
+    </style>
+
+    <style name="Theme.Eccles.Splash" parent="Theme.Eccles">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:statusBarColor">@color/eccles_splash_bg</item>
+        <item name="android:navigationBarColor">@color/eccles_splash_bg</item>
+    </style>
+
+    <style name="Widget.Eccles.ActionBar" parent="Widget.Material3.ActionBar.Solid">
+        <item name="background">@color/eccles_bg</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Widget.Eccles.Chip" parent="Widget.Material3.Chip.Assist">
+        <item name="chipCornerRadius">16dp</item>
+        <item name="chipMinHeight">32dp</item>
+    </style>
+
+    <style name="Widget.Eccles.StatusChip" parent="Widget.Material3.Chip.Assist">
+        <item name="chipIcon">@drawable/dot</item>
+        <item name="chipIconVisible">true</item>
+        <item name="chipIconSize">10dp</item>
+        <item name="iconStartPadding">8dp</item>
+        <item name="chipCornerRadius">16dp</item>
+        <item name="chipMinHeight">32dp</item>
+        <item name="chipBackgroundColor">@color/eccles_surface</item>
+        <item name="chipStrokeColor">@color/eccles_outline_variant</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/eccles_on_surface</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ShapeAppearance.Eccles.Bubble" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerSizeBottomRight">6dp</item>
+    </style>
+
+    <style name="TextAppearance.Eccles.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
